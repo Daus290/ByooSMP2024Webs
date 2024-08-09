@@ -1,0 +1,189 @@
+* {
+    font-family: "Montserrat";
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    background-color: rgba(21, 28, 234, 0.71);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 128px;
+}
+
+#header h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 42px;
+    margin: 0;
+}
+
+#header a {
+    color: greenyellow;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+section {
+    padding: 64px 128px;
+}
+
+#tentang-kami {
+    background-image: url("gambarByoo1.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 300px 300px;
+}
+
+#tentang-kami h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+}
+
+#tentang-kami p {
+    margin-top: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+}
+
+#laman-pilihan {
+    background-image: url("gambarByoo2.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 300px 300px; 
+    column-gap: 72px;
+}
+
+#laman-pilihan h1 {
+    color:white;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+}
+
+#laman-pilihan p {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 8px;
+    text-align: center;
+}
+
+#laman-pilihan-tombol {
+    display: flex;
+    align-items: center;
+}
+
+.tombol {
+    background-color: rgba(255, 102, 48, 0.46);
+    text-decoration: none;
+    color: white;
+    border: 2px solid #FFC108;
+    padding: 12px 90px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 16px;
+}
+
+.tombol-kanan {
+    margin-left: 16px;
+}
+
+/* #penutup {
+    background-image: url("gambarByoo3.jpeg");
+    padding: 150px 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+
+#penutup h1 {
+    color: white;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+
+}
+
+#penutup div {
+    color: white;
+}
+
+#penutup ul {
+    font-size: 24px;
+    padding: 24px;
+} */
+
+#penutup {
+    background-image: url("gambarByoo3.jpeg");
+    background-size: cover;
+    padding: 200px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .penutup-konten {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .penutup-konten h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .penutup-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 100px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 24px;
+    line-height: 1.5;
+  }
+
+footer {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 64px 128px;
+}
+
+footer h1 {
+    color: white;
+}
+
+footer div {
+    color: white;
+}
+
+#copyright {
+    font-size: 24px;
+}
+
+#kontak-admin p {
+    font-size: 20px;
+}
+
+#kontak-admin a {
+    font-size: 20px;
+}
