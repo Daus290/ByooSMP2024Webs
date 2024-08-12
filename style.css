@@ -26,6 +26,10 @@ html, body {
     color: rgba(111, 113, 216, 0.817);
 }
 
+#header h1:hover {
+    color: rgba(111, 113, 216, 0.817);
+}
+
 #header a {
     color: rgb(29, 186, 110);
     font-size: 24px;
