@@ -139,7 +139,7 @@ section {
     color: white;
     font-weight: 500;
     font-size: 20px;
-    margin-top: 8px;
+    margin-top: 20px;
     text-align: center;
     animation: fadeInKanan 1.5s ease-out;
 }
@@ -147,6 +147,7 @@ section {
 #laman-pilihan-tombol {
     display: flex;
     align-items: center;
+    animation: fadeInKiri 1.5s ease-out;
 }
 
 .tombol {
@@ -206,6 +207,7 @@ section {
   .penutup-konten {
     text-align: center;
     color: #fff;
+    animation: fadeInKanan 1.5s ease-out;
   }
   
   .penutup-konten h1 {
@@ -225,6 +227,11 @@ section {
     line-height: 1.5;
   }
 
+  .penutup-list-item:hover {
+    color: #59fd35;
+    border-bottom: 1px solid white;
+  }
+
 footer {
     background-color: rgb(55, 29, 8);
     display: flex;
@@ -233,20 +240,18 @@ footer {
     padding: 32px 128px;
 }
 
-footer h1 {
-    color: white;
-}
-
 footer div {
     color: white;
 }
 
 #copyright {
     font-size: 24px;
+    animation: fadeInKanan 1.5s ease-out;
 }
 
 #kontak-admin p {
     font-size: 20px;
+    animation: fadeInKiri 1.5s ease-out;
 }
 
 @media only screen and (max-width: 1000px) {
