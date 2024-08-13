@@ -216,6 +216,7 @@ section {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     column-gap: 100px;
+    row-gap: 20px;
     list-style-type: none;
     padding: 0;
     font-size: 24px;
@@ -244,4 +245,34 @@ footer div {
 
 #kontak-admin p {
     font-size: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    #header, #footer {
+        padding: 16px 32px;
+    }
+
+    #laman-pilihan {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    section {
+        padding: 64px 32px;
+    }
+
+    #laman-pilihan {
+        row-gap: 32px;
+    }
+
+    #laman-pilihan-tombol {
+        flex-direction: column;
+        row-gap: 48px;
+    }
+
+    .tombol-kanan {
+        padding: 12px 82px;
+    }
 }
