@@ -1,0 +1,57 @@
+/* Tampilan Halaman About */
+* {
+    font-family: "Montserrat";
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@keyframes fadeInBiasa {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#laman-about {
+    background-color: black;
+}
+
+#pilihan-about {
+    padding: 64px 128px;
+    margin-top: 270px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 70px;
+    text-align: center;
+}
+
+.tombolabout {
+    background-color: rgba(86, 48, 255, 0.46);
+    text-decoration: none;
+    color: white;
+    border: 2px solid #1808ff;
+    padding: 20px 90px;
+    font-size: 18px;
+    font-weight: 300;
+    margin-left: 16px;
+    animation: fadeInBiasa 1.3s ease-out;
+}
+
+.tombolabout:hover {
+    color: rgb(0, 255, 179);
+    border-color: #FFC108;
+}
+
+.tombolabout-bawah {
+    padding: 20px 120px;
+}
+
+.tombolabout-beranda {
+    padding: 20px 134px;
+}

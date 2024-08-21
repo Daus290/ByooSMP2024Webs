@@ -5,6 +5,7 @@
 html, body {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 @keyframes fadeInBiasa {
@@ -57,6 +58,7 @@ html, body {
     padding: 24px 128px;
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 
 #header h1 {
@@ -65,11 +67,12 @@ html, body {
     font-size: 42px;
     margin: 0;
     animation: fadeInKanan 1.5s ease-out;
+    transition: color 0.3s ease-in-out;
 }
 
-#header h1:hover {
+    #header h1:hover {
     color: rgba(111, 113, 216, 0.817);
-}
+    }
 
 #header a {
     color: rgb(29, 186, 110);
@@ -77,13 +80,30 @@ html, body {
     font-weight: 500;
     text-decoration: none;
     margin-left: 12px;
+    position: relative;
     animation: fadeInBiasa 1.5s ease-out;
+    transition: color 0.3s ease-in-out;
 }
 
-#header a:hover {
-    color: rgb(179, 0, 255);
-    border-bottom: 2px solid white;
+header a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
 }
+
+    header a:hover:after {
+    width: 100%;
+    }
+
+    #header a:hover {
+    color: rgb(179, 0, 255);
+    /* border-bottom: 2px solid white; */
+    }
 
 section {
     padding: 64px 128px;
@@ -161,13 +181,14 @@ section {
     margin-left: 16px;
 }
 
-.tombol:hover {
+    .tombol:hover {
     color: #FFC108;
     border: 2px solid white;
-}
+    }
 
 .tombol-kanan {
     margin-left: 16px;
+    padding: 12px 98px;
 }
 
 /* #penutup {
@@ -227,9 +248,34 @@ section {
     line-height: 1.5;
   }
 
+  .penutup-list-item {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .penutup-list-item::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    color: #ed705d;
+    font-size: 18px;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .penutup-list-item:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+
   .penutup-list-item:hover {
     color: #59fd35;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
   }
 
 footer {
@@ -247,12 +293,31 @@ footer div {
 #copyright {
     font-size: 24px;
     animation: fadeInKanan 1.5s ease-out;
-}
+}  
 
 #kontak-admin p {
     font-size: 20px;
     animation: fadeInKiri 1.5s ease-out;
 }
+
+#kontak-admin li {
+    display: flex;
+    font-size: 18px;
+    animation: fadeInKiri 1.5s ease-out;
+    line-height: 2.0;
+    padding: 0;
+}
+
+#kontak-admin a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+
+    #kontak-admin a:hover {
+    color: #ecca30;
+    border-bottom: 1px solid white;
+    }
 
 @media only screen and (max-width: 1000px) {
     #header, #footer {
