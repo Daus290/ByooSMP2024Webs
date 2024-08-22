@@ -31,10 +31,10 @@
         </div>
         <div id="laman-pilihan-tombol">
             <div>
-                <a class="tombol" href="https://chat.whatsapp.com/DyjRgwd18K3EheDJJE7bqI" target="_blank">Group</a>
+                <a class="tombol pilihan-tombol" href="https://chat.whatsapp.com/DyjRgwd18K3EheDJJE7bqI" target="_blank">Group</a>
             </div>
             <div>
-                <a class="tombol tombol-kanan" href="about.html">About</a>
+                <a class="tombol tombol-kanan pilihan-tombol" href="about.html">About</a>
             </div>
         </div>
     </section>
@@ -94,7 +94,7 @@
       </section>
     <footer>
         <div id="copyright">
-            &copy; <em id="date">2024</em> ByooSMP
+            &copy; <em id="year"></em> ByooSMP
         </div>
         <div id="kontak-admin">
                 <ul>
@@ -106,5 +106,11 @@
                 </ul>
         </div>
     </footer>
+    <script src="animasiViewPort.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.getElementById('year').textContent = new Date().getFullYear();
+        });
+    </script>
 </body>
 </html>

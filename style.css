@@ -8,7 +8,8 @@ html, body {
     scroll-behavior: smooth;
 }
 
-@keyframes fadeInBiasa {
+/* List Animasi Fade */
+/* @keyframes fadeInBiasa {
     from {
         opacity: 0;
     }
@@ -48,7 +49,7 @@ html, body {
         opacity: 1;
         transform: translateY(0);
     }
-}
+} */
 
 #header {
     background-color: rgb(21, 81, 9);
@@ -66,7 +67,7 @@ html, body {
     font-weight: 700;
     font-size: 42px;
     margin: 0;
-    animation: fadeInKanan 1.5s ease-out;
+    /* animation: fadeInKanan 1.5s ease-out; */
     transition: color 0.3s ease-in-out;
 }
 
@@ -81,7 +82,7 @@ html, body {
     text-decoration: none;
     margin-left: 12px;
     position: relative;
-    animation: fadeInBiasa 1.5s ease-out;
+    /* animation: fadeInBiasa 1.5s ease-out; */
     transition: color 0.3s ease-in-out;
 }
 
@@ -124,7 +125,7 @@ section {
     margin-top: 24px;
     text-align: center;
     color: white;
-    animation: fadeInAtas 1.5s ease-out;
+    /* animation: fadeInAtas 1.5s ease-out; */
 }
 
 #tentang-kami p {
@@ -133,7 +134,7 @@ section {
     font-weight: 500;
     text-align: center;
     color: white;
-    animation: fadeInAtas 1.5s ease-out;
+    /* animation: fadeInAtas 1.5s ease-out; */
 }
 
 #laman-pilihan {
@@ -152,7 +153,7 @@ section {
     font-size: 36px;
     margin: 0;
     text-align: center;
-    animation: fadeInKanan 1.5s ease-out;
+    /* animation: fadeInKanan 1.5s ease-out; */
 }
 
 #laman-pilihan p {
@@ -161,13 +162,13 @@ section {
     font-size: 20px;
     margin-top: 20px;
     text-align: center;
-    animation: fadeInKanan 1.5s ease-out;
+    /* animation: fadeInKanan 1.5s ease-out; */
 }
 
 #laman-pilihan-tombol {
     display: flex;
     align-items: center;
-    animation: fadeInKiri 1.5s ease-out;
+    /* animation: fadeInKiri 1.5s ease-out; */
 }
 
 .tombol {
@@ -228,7 +229,7 @@ section {
   .penutup-konten {
     text-align: center;
     color: #fff;
-    animation: fadeInKanan 1.5s ease-out;
+    /* animation: fadeInKanan 1.5s ease-out; */
   }
   
   .penutup-konten h1 {
@@ -292,18 +293,18 @@ footer div {
 
 #copyright {
     font-size: 24px;
-    animation: fadeInKanan 1.5s ease-out;
+    /* animation: fadeInKanan 1.5s ease-out; */
 }  
 
 #kontak-admin p {
     font-size: 20px;
-    animation: fadeInKiri 1.5s ease-out;
+    /* animation: fadeInKiri 1.5s ease-out; */
 }
 
 #kontak-admin li {
     display: flex;
     font-size: 18px;
-    animation: fadeInKiri 1.5s ease-out;
+    /* animation: fadeInKiri 1.5s ease-out; */
     line-height: 2.0;
     padding: 0;
 }
@@ -319,32 +320,13 @@ footer div {
     border-bottom: 1px solid white;
     }
 
-@media only screen and (max-width: 1000px) {
-    #header, #footer {
-        padding: 16px 32px;
-    }
+.fade-element {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 
-    #laman-pilihan {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    section {
-        padding: 64px 32px;
-    }
-
-    #laman-pilihan {
-        row-gap: 32px;
-    }
-
-    #laman-pilihan-tombol {
-        flex-direction: column;
-        row-gap: 48px;
-    }
-
-    .tombol-kanan {
-        padding: 12px 82px;
-    }
+.fade-element.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
