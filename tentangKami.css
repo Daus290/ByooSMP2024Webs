@@ -1,0 +1,29 @@
+* {
+    font-family: "Montserrat";
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.faq-container {
+    max-width: 1000px;
+}
+
+.faq-pertanyaan::before {
+    content: '\25B6';
+    font-size: 0.8em;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.faq-pertanyaan.active::after {
+    transform: rotate(90deg);
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    /* border: 1px solid yellow; */
+}

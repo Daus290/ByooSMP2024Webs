@@ -1,0 +1,323 @@
+* {
+    font-family: "Montserrat";
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth
+}
+
+/* List Animasi Fade */
+@keyframes fadeInBiasa {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInKiri {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInKanan {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInAtas {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* - - - - - - - - - - - - - - -*/
+
+#header {
+    background-color: rgb(21, 81, 9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 128px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#header h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 0;
+    animation: fadeInKanan 1.5s ease-out;
+    transition: color 0.3s ease-in-out;
+}
+
+    #header h1:hover {
+    color: rgba(111, 113, 216, 0.817);
+    }
+
+#header a {
+    color: rgb(29, 186, 110);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 12px;
+    position: relative;
+    animation: fadeInBiasa 1.5s ease-out;
+    transition: color 0.3s ease-in-out;
+}
+
+header a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+    header a:hover:after {
+    width: 100%;
+    }
+
+    #header a:hover {
+    color: rgb(179, 0, 255);
+    /* border-bottom: 2px solid white; */
+    }
+
+/* - - - - - - - - - - - - - - -*/
+
+section {
+    padding: 64px 128px;
+}
+
+/* - - - - - - - - - - - - - - -*/
+
+#tentang-kami {
+    background-image: url("gambarByoo1.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 250px 250px;
+}
+
+#tentang-kami h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 24px;
+    text-align: center;
+    color: white;
+    /* animation: fadeInAtas 1.5s ease-out; */
+}
+
+#tentang-kami p {
+    margin-top: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    /* animation: fadeInAtas 1.5s ease-out; */
+}
+
+/* - - - - - - - - - - - - - - -*/
+
+#laman-pilihan {
+    background-image: url("gambarByoo2.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 300px 200px; 
+    /* column-gap: 72px; */
+}
+
+#laman-pilihan-huruf {
+    margin-left: 0;
+}
+
+#laman-pilihan-huruf h1 {
+    color:white;
+    font-weight: 700;
+    font-size: 28px;
+    margin: 0;
+    text-align: center;
+    /* animation: fadeInKanan 1.5s ease-out; */
+}
+
+#laman-pilihan-huruf p {
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+    /* animation: fadeInKanan 1.5s ease-out; */
+}
+
+#laman-pilihan-tombol {
+    display: flex;
+    align-items: center;
+    /* animation: fadeInKiri 1.5s ease-out; */
+}
+
+.tombol {
+    background-color: rgba(255, 102, 48, 0.46);
+    text-decoration: none;
+    color: white;
+    border: 2px solid #FFC108;
+    padding: 9px 90px;
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 16px;
+}
+
+    .tombol:hover {
+    color: #FFC108;
+    border: 2px solid white;
+    }
+
+.tombol-kanan {
+    margin-left: 16px;
+    padding: 9px 90px;
+}
+
+/* - - - - - - - - - - - - - - -*/
+
+#penutup {
+    background-image: url("gambarByoo3.jpeg");
+    background-size: cover;
+    padding: 200px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .penutup-konten {
+    text-align: center;
+    color: #fff;
+    /* animation: fadeInKanan 1.5s ease-out; */
+  }
+  
+  .penutup-konten h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  
+  .penutup-list {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 100px;
+    row-gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .penutup-list-item {
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .penutup-list-item::after {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    color: #ed705d;
+    font-size: 14px;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .penutup-list-item:hover::after {
+    width: 100%;
+    opacity: 1;
+  }
+
+  .penutup-list-item:hover {
+    color: #59fd35;
+    /* border-bottom: 1px solid white; */
+  }
+
+/* - - - - - - - - - - - - - - -*/
+
+footer {
+    background-color: rgb(55, 29, 8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 128px;
+}
+
+footer div {
+    color: white;
+}
+
+#copyright {
+    font-size: 24px;
+    /* animation: fadeInKanan 1.5s ease-out; */
+}  
+
+#kontak-admin p {
+    font-size: 20px;
+    /* animation: fadeInKiri 1.5s ease-out; */
+}
+
+#kontak-admin li {
+    display: flex;
+    font-size: 18px;
+    /* animation: fadeInKiri 1.5s ease-out; */
+    line-height: 2.0;
+    padding: 0;
+}
+
+#kontak-admin a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s ease-in-out;
+}
+
+    #kontak-admin a:hover {
+    color: #ecca30;
+    border-bottom: 1px solid white;
+    }
+
+.fade-element {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-element.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
