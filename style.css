@@ -117,7 +117,7 @@ section {
 /* - - - - - - - - - - - - - - -*/
 
 #tentang-kami {
-    background-image: url("gambarByoo1.jpeg");
+    background-image: url("gambar/gambarByoo1.jpeg");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -146,7 +146,7 @@ section {
 /* - - - - - - - - - - - - - - -*/
 
 #laman-pilihan {
-    background-image: url("gambarByoo2.jpeg");
+    background-image: url("gambar/gambarByoo2.jpeg");
     background-size: cover;
     display: flex;
     align-items: center;
@@ -197,6 +197,7 @@ section {
     .tombol:hover {
     color: #FFC108;
     border: 2px solid white;
+    transition: 0.2s ease-in-out;
     }
 
 .tombol-kanan {
@@ -207,7 +208,7 @@ section {
 /* - - - - - - - - - - - - - - -*/
 
 #penutup {
-    background-image: url("gambarByoo3.jpeg");
+    background-image: url("gambar/gambarByoo3.jpeg");
     background-size: cover;
     padding: 200px 300px;
     display: flex;
@@ -283,22 +284,22 @@ footer div {
 }
 
 #copyright {
-    font-size: 24px;
+    font-size: 18px;
     /* animation: fadeInKanan 1.5s ease-out; */
 }  
 
-#kontak-admin p {
-    font-size: 20px;
+#kontak-admin {
+    font-size: 12px;
     /* animation: fadeInKiri 1.5s ease-out; */
 }
 
-#kontak-admin li {
+/* #kontak-admin li {
     display: flex;
     font-size: 18px;
     /* animation: fadeInKiri 1.5s ease-out; */
-    line-height: 2.0;
+    /* line-height: 2.0;
     padding: 0;
-}
+} */
 
 #kontak-admin a {
     text-decoration: none;
